@@ -13,6 +13,8 @@
 		123284692443DAF0007D4550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123284682443DAF0007D4550 /* Assets.xcassets */; };
 		1232846C2443DAF0007D4550 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1232846B2443DAF0007D4550 /* Preview Assets.xcassets */; };
 		1232846F2443DAF0007D4550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1232846D2443DAF0007D4550 /* LaunchScreen.storyboard */; };
+		12ADE0FD2443DDF3004C4709 /* AlbomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ADE0FC2443DDF3004C4709 /* AlbomGridView.swift */; };
+		12ADE0FF2443F207004C4709 /* DragAndDropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ADE0FE2443F207004C4709 /* DragAndDropViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1232846B2443DAF0007D4550 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1232846E2443DAF0007D4550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		123284702443DAF0007D4550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12ADE0FC2443DDF3004C4709 /* AlbomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbomGridView.swift; sourceTree = "<group>"; };
+		12ADE0FE2443F207004C4709 /* DragAndDropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				123284642443DAEF007D4550 /* SceneDelegate.swift */,
 				123284662443DAEF007D4550 /* ContentView.swift */,
 				123284682443DAF0007D4550 /* Assets.xcassets */,
+				12ADE0FC2443DDF3004C4709 /* AlbomGridView.swift */,
+				12ADE0FE2443F207004C4709 /* DragAndDropViewController.swift */,
 				1232846D2443DAF0007D4550 /* LaunchScreen.storyboard */,
 				123284702443DAF0007D4550 /* Info.plist */,
 				1232846A2443DAF0007D4550 /* Preview Content */,
@@ -148,6 +154,8 @@
 			files = (
 				123284632443DAEF007D4550 /* AppDelegate.swift in Sources */,
 				123284652443DAEF007D4550 /* SceneDelegate.swift in Sources */,
+				12ADE0FD2443DDF3004C4709 /* AlbomGridView.swift in Sources */,
+				12ADE0FF2443F207004C4709 /* DragAndDropViewController.swift in Sources */,
 				123284672443DAEF007D4550 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,3 @@
-//
-//  ContentView.swift
-//  HelloMultiWindow
-//
-//  Created by Eugene Oskin on 13.04.2020.
-//  Copyright © 2020 eoskin. All rights reserved.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -13,21 +5,21 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
+            Button(action: {
+                UIApplication.shared.requestSceneSessionActivation(nil, userActivity: nil, options: nil)
+            }, label: { Text("Open new window")})
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+                        Text("New window")
                     }
                 }
                 .tag(0)
-            Text("Second View")
+            AlbumGridView()
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Text("Drag and drop")
                     }
                 }
                 .tag(1)

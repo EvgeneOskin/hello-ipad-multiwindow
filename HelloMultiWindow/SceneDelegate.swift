@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  HelloMultiWindow
-//
-//  Created by Eugene Oskin on 13.04.2020.
-//  Copyright © 2020 eoskin. All rights reserved.
-//
-
 import UIKit
 import SwiftUI
 
