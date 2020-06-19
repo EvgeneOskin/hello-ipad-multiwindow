@@ -35,6 +35,9 @@ class DragAndDropViewControoler: UIViewController {
 
 class DragDelegate: NSObject, UIDragInteractionDelegate {
     func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session: UIDragSession) -> [UIDragItem] {
+        if UIApplication.shared.connectedScenes.count == 1 {
+            UIApplication.shared.requestSceneSessionActivation(nil, userActivity: nil, options: nil)
+        }
         let content = CellContent(counter: (interaction.view! as! AlbumPrivateCell).counter)
         let stringItemProvider = NSItemProvider(object: content)
         return [
