@@ -35,13 +35,16 @@ class DragAndDropViewControoler: UIViewController {
 
 class DragDelegate: NSObject, UIDragInteractionDelegate {
     func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session: UIDragSession) -> [UIDragItem] {
-        if UIApplication.shared.connectedScenes.count == 1 {
-            UIApplication.shared.requestSceneSessionActivation(nil, userActivity: nil, options: nil)
-        }
         let content = CellContent(counter: (interaction.view! as! AlbumPrivateCell).counter)
         let stringItemProvider = NSItemProvider(object: content)
+        // From this article https://medium.com/better-programming/getting-ready-for-ios-14-7cffcf198239
+        let userActivity = NSUserActivity(activityType: "com.example.eoskin.HelloMultiWindow.openApp")
+        userActivity.title = "Open the app"
+        stringItemProvider.registerObject(userActivity, visibility: .all)
+
+        let dragItem = UIDragItem(itemProvider: stringItemProvider)
         return [
-            UIDragItem(itemProvider: stringItemProvider)
+            dragItem
         ]
     }
 }
